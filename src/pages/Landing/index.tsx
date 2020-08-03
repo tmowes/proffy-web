@@ -1,12 +1,49 @@
 import React from 'react'
 
-import { Container } from './styles'
+import {
+  LandingWrapper,
+  LandingContainer,
+  LogoContainer,
+  Logo,
+  LogoText,
+  LandigImage,
+  ButtonsContainer,
+  StudyButton,
+  GiveClassesButton,
+  StudyIcon,
+  GiveClassesIcon,
+  PurpleHeartIcon,
+  TotalConnections,
+} from './styles'
 
 const Landing: React.FC = () => {
   return (
-    <Container className="container">
-      <h1>Dashboard</h1>
-    </Container>
+    <LandingWrapper>
+      <LandingContainer className="container">
+        <LogoContainer>
+          <Logo />
+          <LogoText>Sua plataforma de estudos online.</LogoText>
+        </LogoContainer>
+
+        <LandigImage />
+
+        <ButtonsContainer>
+          <StudyButton>
+            <StudyIcon />
+            Estudar
+          </StudyButton>
+          <GiveClassesButton>
+            <GiveClassesIcon />
+            Dar aulas
+          </GiveClassesButton>
+        </ButtonsContainer>
+
+        <TotalConnections>
+          Total de 69 conexões já realizadas
+          <PurpleHeartIcon />
+        </TotalConnections>
+      </LandingContainer>
+    </LandingWrapper>
   )
 }
 

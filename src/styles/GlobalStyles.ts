@@ -80,9 +80,13 @@ li {
 .container {
   width: 90vw;
   max-width: 700px;
-  display: flex;
+  /* display: flex; */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1100px) {
+    max-width: 1100px;
+  }
 }
 @media (min-width: 700px) {
   :root {
