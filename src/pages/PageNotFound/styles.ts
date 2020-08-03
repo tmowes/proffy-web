@@ -10,7 +10,7 @@ export const Container = styled.div`
   padding-top: 50vh;
   h1 {
     font-size: 50px;
-    color: var(--orange);
+    color: var(--secondary);
     text-align: center;
   }
 `

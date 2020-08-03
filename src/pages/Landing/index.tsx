@@ -28,11 +28,11 @@ const Landing: React.FC = () => {
         <LandigImage />
 
         <ButtonsContainer>
-          <StudyButton>
+          <StudyButton to="/study">
             <StudyIcon />
             Estudar
           </StudyButton>
-          <GiveClassesButton>
+          <GiveClassesButton to="/give-classes">
             <GiveClassesIcon />
             Dar aulas
           </GiveClassesButton>

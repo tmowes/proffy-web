@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 
+import { Link } from 'react-router-dom'
 import logoImg from '../../assets/logo.svg'
 import landingImg from '../../assets/landing.svg'
 import studyIcon from '../../assets/icons/study.svg'
@@ -90,7 +91,7 @@ const buttonsStyles = css`
     font-size: 2.4rem;
   }
 `
-export const StudyButton = styled.a`
+export const StudyButton = styled(Link)`
   ${buttonsStyles}
   margin-right: 1.6rem;
   background: var(--primary-lighter);
@@ -98,7 +99,7 @@ export const StudyButton = styled.a`
     background: var(--primary-light);
   }
 `
-export const GiveClassesButton = styled.a`
+export const GiveClassesButton = styled(Link)`
   ${buttonsStyles}
   background: var(--secondary);
   &:hover {
@@ -131,7 +132,7 @@ export const TotalConnections = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   @media (min-width: 1100px) {
     grid-area: total;
     justify-self: end;

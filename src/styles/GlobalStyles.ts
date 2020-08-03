@@ -54,7 +54,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background:  var(--gray);
 }
 body, button, input, textarea {
   border: 0;
@@ -78,9 +77,8 @@ li {
   padding: 8px;
 }
 .container {
-  width: 90vw;
+  width: 100vw;
   max-width: 700px;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
