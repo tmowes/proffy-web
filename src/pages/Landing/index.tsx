@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container } from './styles'
 
-const Dashboard: React.FC = () => {
+const Landing: React.FC = () => {
   return (
     <Container className="container">
       <h1>Dashboard</h1>
@@ -10,4 +10,4 @@ const Dashboard: React.FC = () => {
   )
 }
 
-export default Dashboard
+export default Landing
