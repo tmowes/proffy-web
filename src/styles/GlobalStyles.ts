@@ -61,6 +61,7 @@ body, button, input, textarea {
   background: none;
   font-size: 1.6rem;
   font-weight: 500;
+  color: var(--text-base);
   font-family: Poppins Archivo -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

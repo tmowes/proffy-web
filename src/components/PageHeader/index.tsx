@@ -11,7 +11,7 @@ import {
 } from './styles'
 import { HeaderProps } from './types'
 
-const PageHeader: React.FC<HeaderProps> = ({ title }) => {
+const PageHeader: React.FC<HeaderProps> = ({ title, children }) => {
   return (
     <Header>
       <TopNavBar>
@@ -22,6 +22,7 @@ const PageHeader: React.FC<HeaderProps> = ({ title }) => {
       </TopNavBar>
       <HeaderContent>
         <HeaderText>{title}</HeaderText>
+        {children}
       </HeaderContent>
     </Header>
   )
