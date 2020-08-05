@@ -21,7 +21,7 @@ export default createGlobalStyle`
   --button-text: #FFFFFF;
   --box-base: #FFFFFF;
   --box-footer: #FAFAFC;
-  --primary-darker: #21222c;
+  --primary-darker2: #21222c;
   --secondary-darker: #282a36;
   --search: #202327;
   --white: #D9D9D9;

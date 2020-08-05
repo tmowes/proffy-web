@@ -8,10 +8,15 @@ import {
   Logo,
   HeaderContent,
   HeaderText,
+  HeaderDescription,
 } from './styles'
 import { HeaderProps } from './types'
 
-const PageHeader: React.FC<HeaderProps> = ({ title, children }) => {
+const PageHeader: React.FC<HeaderProps> = ({
+  title,
+  description,
+  children,
+}) => {
   return (
     <Header>
       <TopNavBar>
@@ -22,6 +27,7 @@ const PageHeader: React.FC<HeaderProps> = ({ title, children }) => {
       </TopNavBar>
       <HeaderContent>
         <HeaderText>{title}</HeaderText>
+        {description && <HeaderDescription>{description}</HeaderDescription>}
         {children}
       </HeaderContent>
     </Header>

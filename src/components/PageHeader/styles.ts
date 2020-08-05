@@ -44,9 +44,9 @@ export const HeaderContent = styled.div`
   position: relative;
   @media (min-width: 700px) {
     flex: 1;
-    max-width: 740px;
+    max-width: 74rem;
     margin: 0 auto;
-    padding-bottom: 48px;
+    padding-bottom: 4.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,5 +57,12 @@ export const HeaderText = styled.strong`
   font: 700 3.6rem Archivo;
   line-height: 4.2rem;
   color: var(--title-primary);
-  max-width: 350px;
+  max-width: 35rem;
+`
+export const HeaderDescription = styled.p`
+  font: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--title-primary);
+  max-width: 30rem;
+  margin-top: 2.4rem;
 `

@@ -1,0 +1,28 @@
+{
+  "week_day": [
+    { "value": "0", "label": "Domingo" },
+    { "value": "1", "label": "Segunda-feira" },
+    { "value": "2", "label": "Terça-feira" },
+    { "value": "3", "label": "Quarta-feira" },
+    { "value": "4", "label": "Quinta-feira" },
+    { "value": "5", "label": "Sexta-feira" },
+    { "value": "6", "label": "Sábado" }
+  ],
+  "subjects": [
+    { "value": "TypeScript", "label": "TypeScript" },
+    { "value": "React-Native", "label": "React-Native" },
+    { "value": "ReactJS", "label": "ReactJS" },
+    { "value": "Node.js", "label": "Node.js" },
+    { "value": "Rocket Science", "label": "Rocket Science" },
+    { "value": "Big Data", "label": "Big Data" },
+    { "value": "ElectronJS", "label": "ElectronJS" },
+    { "value": "JavaScript", "label": "JavaScript" },
+    { "value": "Algoritmo", "label": "Algoritmo" },
+    { "value": "Python", "label": "Python" },
+    { "value": "Vue", "label": "Vue" },
+    { "value": "Angular", "label": "Angular" },
+    { "value": "Flutter", "label": "Flutter" },
+    { "value": "Kotlin", "label": "Kotlin" },
+    { "value": "Deno", "label": "Deno" }
+  ]
+}
