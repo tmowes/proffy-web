@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 
 import {
   TeacherItemContainer,
@@ -13,30 +13,39 @@ import {
   WhatsButton,
   WhatsIcon,
 } from './styles'
+import { TeacherItemProps } from './types'
+import api from '../../services/api'
 
-const TeacherItem: React.FC = () => {
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  const createNewConnection = useCallback(() => {
+    async function saveNewConnection() {
+      await api.post('connections', {
+        user_id: teacher.id,
+      })
+    }
+    saveNewConnection()
+  }, [teacher.id])
   return (
     <TeacherItemContainer>
       <HeaderListItem>
-        <Avatar />
+        <Avatar src={teacher.avatar} alt={teacher.name} />
         <ContentItem>
-          <TitleItem>Julius Mowes</TitleItem>
-          <TagItem>Química</TagItem>
+          <TitleItem>{teacher.name}</TitleItem>
+          <TagItem>{teacher.subject}</TagItem>
         </ContentItem>
       </HeaderListItem>
-      <TextItem>
-        Entusiasta das melhores tecnologias de foguete avançada.
-        <br />
-        <br />
-        Currently studying NodeJS, ReactJS, ReactNative, JavaScript, TypeScript
-        and BigDataAnalysis.
-      </TextItem>
+      <TextItem>{teacher.bio}</TextItem>
       <FooterItem>
         <FooterTextItem>
           Preço/hora
-          <strong>R$ 80,00</strong>
+          <strong>{`R$ ${teacher.cost}`}</strong>
         </FooterTextItem>
-        <WhatsButton to="/">
+        <WhatsButton
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://wa.me/${teacher.whatsapp}`}
+          onClick={createNewConnection}
+        >
           <WhatsIcon />
           Entrar em contato
         </WhatsButton>

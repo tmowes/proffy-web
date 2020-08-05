@@ -9,7 +9,7 @@ export const TeacherFormContainer = styled.div`
     max-width: 100%;
   }
 `
-export const MainForm = styled.main`
+export const MainForm = styled.form`
   background: var(--box-base);
   width: 100%;
   max-width: 74rem;

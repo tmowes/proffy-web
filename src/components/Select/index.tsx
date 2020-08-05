@@ -7,8 +7,8 @@ const Select: React.FC<SelectProps> = ({ name, label, options, ...rest }) => {
   return (
     <SelectBlock>
       <Subject htmlFor={name}>{label}</Subject>
-      <SelectText id={name} {...rest}>
-        <SelectOption value="" selected disabled hidden>
+      <SelectText value="" id={name} {...rest}>
+        <SelectOption value="" disabled hidden>
           Selecione uma opção
         </SelectOption>
         {options.map(option => (

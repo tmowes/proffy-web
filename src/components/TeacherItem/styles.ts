@@ -1,10 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 import whatsappIcon from '../../assets/icons/whatsapp.svg'
-
-const avatarUrl =
-  'https://avatars0.githubusercontent.com/u/59985627?s=460&u=4250eeda3e661627db57da113f43dd462c0ca2d7&v=4'
 
 export const TeacherItemContainer = styled.article`
   margin-top: 2.4rem;
@@ -21,10 +17,7 @@ export const HeaderListItem = styled.header`
     padding: 3.2rem;
   }
 `
-export const Avatar = styled.img.attrs({
-  src: avatarUrl,
-  alt: 'Avatar',
-})`
+export const Avatar = styled.img`
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -72,7 +65,7 @@ export const FooterTextItem = styled.p`
     }
   }
 `
-export const WhatsButton = styled(Link)`
+export const WhatsButton = styled.a`
   width: 20rem;
   height: 5.6rem;
   border-radius: 0.8rem;
