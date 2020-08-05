@@ -40,7 +40,6 @@ export const TitleItem = styled.strong`
 export const TagItem = styled.span`
   font-size: 1.6rem;
   display: block;
-  /* color: var(--text-title); */
   margin-top: 0.4rem;
 `
 export const TextItem = styled.p`
